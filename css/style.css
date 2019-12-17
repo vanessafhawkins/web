@@ -1,0 +1,471 @@
+/*
+	Vanessa Hawkins
+	2019
+*/
+
+/*------------------------------------------------------ 
+	HTML - Colors
+------------------------------------------------------*/
+/*
+
+DESATURATED CYAN - #6C998B - rgba(121,171,155)
+
+Background:
+WHITE - #FFFFFF - rgba(255,255,255)
+
+Nav:
+PEARL AQUA - #94D1BE - rgba(148,209,190)
+AERO BLUE - #c9ffee - rgba(201, 255, 238)
+
+Headings and Titles:
+MYRTLE GREEN - #397367 - rgba(57, 115, 103)
+
+Buttons and Features:
+RUBY RED - #931621 - rgba(147, 22, 33)
+	Darker Shade ^^ - #59080f - rgba(89, 8, 15)
+
+Footer:
+BLACK OLIVE - #3B413C - rgba(59,65,60)
+
+*/
+/*------------------------------------------------------ 
+	HTML
+------------------------------------------------------*/
+body, html {
+  	width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+
+/*------------------------------------------------------ 
+	Header & Footer
+------------------------------------------------------*/
+
+footer a{
+	color: white;
+	display: block;
+	text-decoration: none;
+}
+
+footer a:hover {
+	opacity: 0.7;
+}
+
+footer {
+	background-color: #3B413C;
+	color: white;
+	text-align: left;
+
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 15%;
+	padding-right: 15%;
+
+	font-size: 18px;
+	width: 100%;
+}
+
+
+/*------------------------------------------------------ 
+	Navigation
+------------------------------------------------------*/
+/*Accessibility Check: 
+
+Meaningful text, icons, graphics: minimum contrast 4.5:1
+Large or bold text: minimum contrast of 3:1
+
+*/
+.dropbtn { 
+  margin-top: 0px;
+  padding: 0;
+  overflow: hidden;
+  background-color:  #94D1BE;
+  box-shadow: 1px 0px 8px black;
+  position: fixed;
+  width: 100%;
+}
+
+.dropbtn{
+  display: block;
+  color: black;
+  padding: 14px 16px;
+}
+
+
+/***************************/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #94D1BE;
+  color: black;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/*.dropdown {
+  position: relative;
+  display: inline-block;
+}*/
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #94D1BE;
+  min-width: 100%;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #c9ffee;
+}
+
+
+/*------------------------------------------------------ 
+	banner image
+------------------------------------------------------*/
+
+
+#banner {
+	background-image: url("../images/lakeTahoe2.jpg");
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	background-attachment: fixed;
+	vertical-align: middle;
+	background-position: center;
+	padding-top: 0.5%;
+	/*padding-top: 0vh;*/
+
+	/*padding-bottom: 37%;*/
+	/*padding-bottom: 71vh;*/
+	padding-bottom: 10%
+
+}
+
+div h1{
+	font-family: "Arial Black", sans-serif;
+	font-size: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+div.box {
+	/*background: rgba(0,0,0, 0.5);*/
+	padding-top: 14em;
+	padding-bottom: 2em;
+	/*border:1px solid black;*/
+}
+
+
+.btext {
+	color: white;
+	text-align: center;
+}
+
+/*------------------------------------------------------ 
+	Portfolio Content
+------------------------------------------------------*/
+/*  CSS GRID STYLES */
+
+   .container {
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+       grid-gap: 1rem;
+       text-align: center;
+       max-width: 90%;
+   }
+
+   /* portfolio image */
+   .port {
+	   	border: 1px solid gray;
+	   	height: auto;
+	   	width: 90%;
+	   	margin-bottom: 0;
+   }
+
+   .container a {
+   		text-decoration: none;
+   		color: #931621;
+   		font-weight: bold;
+   		font-size: 20px;
+
+   }
+   .pbutton{
+   		background-color: #931621;
+		color: white;
+		font-size: 20px;
+		/*border-radius: 5px;*/
+		margin-bottom: 1em;
+		width: 90%;
+		height: 2em;
+		margin-top: 0;
+
+   }
+   .pbutton:hover {
+	background-color: #59080f;
+}
+
+/*------------------------------------------------------ 
+	Main Content
+------------------------------------------------------*/
+
+body {
+	background-color: white;
+	font-family: "Arial", sans-serif;
+	max-width: 100%;
+	font-size: 18px;
+}
+
+h2, h3, h4 {
+	/*color: #6C998B; */ /*Old Color*/
+	color: #397367;
+}
+
+h1.left {
+	/*color: #6C998B; */ /*Old Color*/
+	color: #397367;
+}
+
+
+h1 {
+	font-size: 40px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+section {
+	padding-left: 15%;
+	padding-right: 15%;
+	font-size: 18px;
+}
+
+.left {
+	margin-left: 0px;
+	text-align: center;
+}
+
+th.date {
+	text-align: right;
+}
+
+img {
+	
+	margin: 1em;
+}
+
+#more {
+	display: none;
+}
+
+/*------------------------------------------------------ 
+	Website form features
+------------------------------------------------------*/
+/*Form feilds*/
+
+input {
+	border-radius: 3px;
+	border: none;
+	padding: 5px;
+	padding-right: 50px;
+	background-color: #E8E8E8;
+}
+
+textarea {
+	border-radius: 5px;
+	border: none;
+	background-color: #E8E8E8;
+}
+
+
+/*Buttons*/
+
+.sbutton {
+	/*background-color: #3B413C;*/
+	background-color: #931621;
+	color: white;
+	font-size: 16px;
+	border-radius: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	/*box-shadow: 0px 3px 3px grey; */
+	margin-bottom: 1em;
+}
+
+.sbutton:hover {
+	/*background-color: rgba(59,65,60, 0.5);*/
+	background-color: #59080f;
+}
+
+/*------------------------------------------------------ 
+	Browser Sizes
+------------------------------------------------------*/
+@media screen and (max-width: 1400px){
+	.container {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 1rem;
+       text-align: center;
+       max-width: 90%;
+       margin: auto;
+       overflow-x: auto;
+   }
+
+   	.port {
+	   	border: 1px solid gray;
+	   	height: auto;
+	   	max-width: 90%; 	
+	}
+
+	.pbutton {
+		float: center;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	section {
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: 18px;
+	}
+
+	.container {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 1rem;
+       text-align: center;
+       max-width: 90%;
+       margin: auto;
+       overflow-x: auto;
+   }
+
+   	.port {
+	   	border: 1px solid gray;
+	   	height: auto;
+	   	max-width: 90%; 	
+	}
+
+
+	footer {
+		padding-top: 5%;
+		padding-bottom: 5%;
+
+		text-align: left;
+
+		padding-left: 10%;
+		padding-right: 10%;
+
+		font-size: 18px;
+	}
+
+	
+}
+
+@media screen and (max-width: 480px){
+	#banner {
+		padding-top: 0;
+		padding-bottom: 1%;
+	}
+	div.box {
+		padding-top: 6em;
+	}
+
+	header h1 {
+		text-align: center;
+		padding: 0em;
+		font-size: 25px;
+	}
+
+	section {
+		padding-left: 10%;
+		padding-right: 10%;
+		font-size: 18px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+
+	h4{
+		font-size: 16px;
+	}
+
+	body {
+		font-size: 14px;
+	}
+
+	nav li {
+
+	 /* padding: 5%;*/
+	 /* font-size: 30px;*/
+	}
+
+	.container {
+       display: grid;
+       grid-template-columns: repeat(1, 1fr);
+       grid-gap: 1rem;
+       text-align: center;
+       max-width: 100%;
+       margin: auto;
+       overflow-x: auto;
+       overflow: auto;
+   }
+
+   	.port {
+	   	border: 1px solid gray;
+	   	height: auto;
+	   	max-width: 100%; 	
+	}
+
+	.pbutton{
+		font-size: 16px;
+		overflow-x: auto;
+	}
+
+	footer {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		text-align: left;
+		padding-left: 5%;
+		padding-right: 5%;
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
